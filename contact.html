@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/index.html">
+                <span>iBlog</span>
+            </a>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-control" type="text" name="query" placeholder="Search for an article">    
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Feel free to contact us</h1>
+        <div class="contact-form">
+            <form class="form-box">
+                <input type="text" class="form-box-input1" placeholder="Enter your name" required>
+                <div class="text-area-1"></div>
+                <input type="email" class="form-box-input2" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address" placeholder="Enter your email" required>
+                <div class="text-area-2"></div>
+                <textarea type="text" cols="30" rows="10" class="form-box-input" placeholder="Enter your message"></textarea>
+                <div class="btn-box">
+                    <button class="btn btn-contact" onclick="validateForm(event)">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+     <p> Copyright &copy; iBlog.com<p> <a href="https://www.vecteezy.com/free-vector/typing">Vector by vecteezy</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

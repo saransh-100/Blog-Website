@@ -1,0 +1,50 @@
+.contact-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
+    padding: 2rem 5rem;
+    height: 80vh;
+}
+
+
+.contact-container::after{
+    content: "";
+    background: url('/img/11.svg') repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+    border-radius: 10px;
+}
+
+.contact-container h1{
+    font-family: var(--font1);
+}
+.contact-form{
+    display: flex;
+    gap: 2rem;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+
+.btn-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    outline: none;
+}

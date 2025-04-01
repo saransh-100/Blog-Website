@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    height: 10vh;
+    font-family: var(--font1);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control{
+    outline: none;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left span{
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+}
+
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.4rem;
+    font-family: var(--font2);
+}
+
+
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: var(--main-bg-color);
+    }
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 3rem 0rem;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.content::after{
+    content: "";
+    background: url('/img/11.svg') repeat center center;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font1);
+    width: 50%;
+    padding:3rem;
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.content-right img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.articles{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    background-color: rgba(246, 246, 246, 0.5);
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.articles h1{
+    /* display: inline; */
+}
+.year-box{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1.5rem;
+    font-family: var(--font2);
+    flex-wrap: wrap;
+}
+
+.year-box-options{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+} 
+
+.year-box-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.article{
+    display: flex;
+    margin: 1.5rem;
+    gap: 2rem;
+}
+
+.article img{
+    width: 20rem;
+    height: 14rem;
+    border-radius: 10px;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1rem;
+    width: 30vw;
+    height: 100%;
+}
+
+.article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--main-bg-color);
+    font-family: var(--font2);
+}
+
+.footer a{
+    text-decoration: underline;
+    color: white;
+}
